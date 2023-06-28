@@ -1,0 +1,29 @@
+---
+title: "Capstone text predictor app presentation"
+author: "Renkz"
+output: ioslides_presentation
+date: "2023-06-28"
+---
+
+## The model
+
+The app is based on the **back-off algorithm** which first attempts to apply a prediction based on a 6 word ngram. 
+
+Should it not succeed, it will back off to the 5 word ngram, which can eventually reach the 1 word ngram for which the word with the highest frequency is selected. 
+
+
+## The data
+
+From each of the US **twitter**, **news** and **blogs** datasets a 5% random sample was extracted. 
+
+The data was cleaned and **6 ngrams** were extracted which were saved as an workspace image to ensure that the app would load smoothly.
+
+## The app
+
+Use the **app** [here](https://renee-pesor.shinyapps.io/TextPredictor/) by typing words (and selecting the number of predictions if needed).
+
+**Github** link is [here](https://github.com/Renkzzz/capstone)
+
+## That is all!
+
+![](https://media2.giphy.com/media/3oEdva9BUHPIs2SkGk/giphy.gif?cid=6c09b952nlnhbc0xlobwmfrgmwo4b9jpbvslzx7i1dldgkxc&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g)
